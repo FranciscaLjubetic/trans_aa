@@ -9,6 +9,13 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <title>TransAA</title>
+    <style>
+        
+        h1   {color: rgb(0, 0, 22);}
+        
+        .img:hover.imagen {-webkit-transform:scale(1.3);transform:scale(1.3);}
+        .img {overflow:hidden;}
+    </style>
 </head>
 <body>
     <div id="wrapper" class="container-fluid">
@@ -20,17 +27,40 @@
                         <div class="container-fluid">
                             <div class="collapse navbar-collapse text-bold" id="navbarNav">
                                 <ul class="navbar-nav">
-                                <li class="nav-item"><a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros   |</a></li>
-                                <li class="nav-item"><a class="nav-link" href="servicios.html">  Servicios  |</a></li>
-                                <li class="nav-item"><a class="nav-link" href="nosotros.html">  Nosotros  |</a></li>
-                                <li class="nav-item"><a class="nav-link" href="flota.html">  Flota  |</a></li>
-                                <li class="nav-item"><a class="nav-link" href="contacto.html">  Contacto </a></li>
+                                <li class="nav-item"><a id ="Nosotros"class="nav-link active" aria-current="page" href="nosotros.html">Nosotros   |</a></li>
+                                <li class="nav-item"><a  id ="Servicios"class="nav-link" href="#">  Servicios  |</a></li>
+                                <li class="nav-item"><a id="Contacto" class="nav-link" href="#">  Contacto </a></li>
                                 <li><a href="tel:+56967791006"><img src="static\img\iconos\redes-sociales\whatsapp.png" alt="" style="height: 2em;"></a></li>
                                 </ul>
                             </div>
                         </div>
                     </nav>
                 </div>
+            </div>
+        </div>
+
+        <div id="formulario_contacto" class="row-cols-1 text-bold">
+            <form action="mailto:a.andaur.a@gmail.com" method="post" ENCTYPE="text/plain" class="border p-4 text-bold text-white mb-3" style="border-color:rgb(70, 3, 255); border-radius: 15px; background: rgb(4,23,144); background: linear-gradient(135deg, rgba(4,23,144,1) 0%, rgba(4,134,247,1) 48%, rgba(148,5,244,1) 100%);">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Nombre:</label>
+                    <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="nombre apellido">
+                <div class="mb-3 mt-3">
+                    <label for="exampleFormControlInput1" class="form-label">Correo:</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="correo@ejemplo.com">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Mensaje:</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-info text-white">Enviar</button>
+            </form>
+            <div>
+                <p class="text-bold mt-3"> 
+                    🏠 Dirección: AV Errázuriz 1178, Oficina 75. Valparaíso, Chile. <br>
+                    📱 Teléfonos: <a href="tel:+56967791006">+56 9 67791006</a> <br>
+                    📧 Email: <a href="mailto:a.andaur.a@gmail.com">a.andaur.a@gmail.com</a> también puedes escribirnos a este correo: andres.a@transporteandaur.cl
+                </p>
+                
             </div>
         </div>
         
@@ -89,6 +119,24 @@
                 </div>
             </div>
             
+            <div id="ekipo"class="container bg-white pt-4"><!-- equipo-->
+                <div id="equipito" class="row-cols-1 text-center text-dark align-bottom">
+                    <h2>Nosotros</h2>
+                    <div id="chinauno" class="col bg-white text-dark bg-img-block text-center">
+                        <img class="img-fluid" src="static\img\fotos\andres.png" alt="" style="height: 10em;">
+                        <h4 class="mt-4">Andrés Andaur</h4>
+                        <h5>CEO</h5>
+                        <p>Andrés es el fundador de la empresa <br> y tambien quien actualmente la dirige. <br> Además, es un gran cantante. </p>
+                        <div id="rrss" class="row-cols-1 row-cols-sm-3 row-cols-md-3 mg-10">
+                            <div class="col"><img src="img\iconos\redes-sociales\twitter.png" alt=""></div>
+                            <div class="col"><img src="img\iconos\redes-sociales\in.png" alt=""></div>
+                            <div class="col"><img src="img\iconos\redes-sociales\mensaje.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
             <div id="pilares" class="row row-cols-1 row-cols-sm-3 row-cols-md-3 bg-white text-dark bg-img-block text-center">
                 <div id="flotita" class="col">
                     <img class="img-fluid" src="static\img\iconos\servicios-icon\public-transport.png" alt="" style="height: 5em;"><br>
@@ -108,25 +156,6 @@
             </div>
         </div>
         
-        <div id="ekipo"class="container bg-white pt-4"><!-- equipo-->
-            <div id="equipito" class="row-cols-1 text-center text-dark align-bottom">
-                <h2>Contacto</h2>
-                <div id="chinauno" class="col bg-white text-dark bg-img-block text-center">
-                    <img class="img-fluid" src="static\img\fotos\andres.png" alt="" style="height: 10em;">
-                    <h4 class="mt-4">Andrés Andaur</h4>
-                    <h5>CEO</h5>
-                    <p>Andrés es el fundador de la empresa <br> y tambien quien actualmente la dirige. <br> Además, es un gran cantante. </p>
-                    <div id="rrss" class="row-cols-1 row-cols-sm-3 row-cols-md-3 mg-10">
-                        <div class="col"><img src="img\iconos\redes-sociales\twitter.png" alt=""></div>
-                        <div class="col"><img src="img\iconos\redes-sociales\in.png" alt=""></div>
-                        <div class="col"><img src="img\iconos\redes-sociales\mensaje.png" alt=""></div>
-                    </div>
-                </div>
-            
-            </div>
-            
-                
-        </div>
         <div id="footer"class="container text-white bg-primary p-4">
             <div class="row">
                 <p class="col-3">Fran Lj, 2021</p>
@@ -137,4 +166,57 @@
     </div>
 </body>
 <script type="text/javascript" src="js/materialize.min.js"></script>
+<script>
+
+        $(document).ready(function(){
+			$("b").hover(function() {
+				$(this).css('color', 'orange');
+			},function(){
+				$(this).css('color', 'blue');
+			});
+
+
+			$('a').on('click', function(){
+				alert("we don't actually serve pizza...");
+			});
+
+			$('img').on('click', function(){
+				$(this).slideUp();
+			});
+
+			$('h5').on('click',function(){
+				$('img').slideDown();
+			});
+
+			$('button').on('click',function(){
+				const result = $('input:checked').val()  
+				alert("Thank you for your choice, we like " + result + " too!");
+				
+			});
+		})	
+
+    $( "li.nav-item" ).hover(function() {
+        $( this ).fadeOut( 300 );
+        $( this ).fadeIn( 300 );
+    });
+
+    $('#deletebtn').on('click',function(evento){
+        evento.preventDefault();
+        const href =$(this).attr('href');
+        console.log(href);
+        const yes= confirm('Are you sure to delete your trip?');
+        if (yes){
+            window.location= href
+        };
+    })
+
+    $("#network_input").on("change", function () {
+        if ($(this).val() === "other") {
+            $("#newNetwork").removeClass("d-none");
+        } 
+        else {
+            $("#newNetwork").addClass("d-none");
+        }
+    });
+</script>
 </html>
