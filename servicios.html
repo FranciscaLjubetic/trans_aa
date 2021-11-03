@@ -1,0 +1,167 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <title>TransAA</title>
+    <style>
+        .iconito {
+            -webkit-transition: transform 1s ease;
+            transition: transform 1s ease;
+        }
+        .iconito:hover {
+            transform: scale(1.3); 
+        }
+        #logo {
+
+        }
+        .up {
+            -webkit-transition: font-size 1s ease;
+            transition: font-size 1s ease;
+            }
+        .up:hover{
+            font-size: 105%;
+            }
+    </style>
+</head>
+<body>
+    <div id="wrapper" class="container-fluid">
+        <div id="header" class="container "><!-- logo y navbar-->
+            <div class="row mt-4">
+                <div id="logo" class="col img-fluid"><img src="static\img\fotos\trans_aa_vert_png.png" alt="" style="height:10em"></div>
+                <div id="navarriba" class="col">
+                    <nav class="navbar-brand navbar-expand navbar-primary bg-white ">
+                        <div class="container-fluid">
+                            <div class="collapse navbar-collapse text-bold" id="navbarNav">
+                                <ul class="navbar-nav">
+                                <li class="nav-item up"><a id ="Nosotros"class="nav-link active" aria-current="page" href="nosotros.html">Nosotros   |</a></li>
+                                <li class="nav-item up"><a  id ="Servicios"class="nav-link" href="servicios.html">  Servicios  |</a></li>
+                                <li class="nav-item up"><a id="contact" value ="Contacto" class="nav-link" href="contacto.html">  Contacto  |</a></li>
+                                <li class="nav-item up"><a id="contact" value ="index" class="nav-link" href="index.html">  Home </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div id="formulariocontacto" class="d-none">
+                <form action="mailto:franciscaljubetic@gmail.com" method="post" ENCTYPE="text/plain" class="border p-4 text-bold text-white mb-3" style="border-color:rgb(70, 3, 255); border-radius: 15px; background: rgb(39,54,152); background: linear-gradient(135deg, rgba(39,54,152,1) 0%, rgba(28,95,153,1) 48%, rgba(79,34,194,1) 100%);">
+                    <p class="text-right" style="color:rgb(3, 175, 255)">Doble click para cerrar este formulario</p class="text-right">
+                    <p class="text-bold mt-3"> 
+                        🏠 Dirección: AV Errázuriz 1178, Oficina 75. Valparaíso, Chile. <br>
+                        📱 Teléfonos: <a href="tel:+56967791006" style="color:rgb(3, 175, 255)">+56 9 67791006</a> <br>
+                        📧 Email: <a href="mailto:a.andaur.a@gmail.com" style="color:rgb(3, 175, 255)"> a.andaur.a@gmail.com</a> también puedes escribirnos a este correo: andres.a@transporteandaur.cl
+                    </p>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Nombre:</label>
+                        <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="nombre apellido">
+                    <div class="mb-3 mt-3">
+                        <label for="exampleFormControlInput1" class="form-label">Correo:</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="correo@ejemplo.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Mensaje:</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-info text-white">Enviar</button>
+                </form>
+            </div>
+        </div>
+
+        
+        
+
+
+        
+        
+        <div id="servicios" class="container text-center"><!-- servicios-->
+            <div id="services_handler" class="row-cols-1 mb-3">
+                <div class="col"><img  class="img-fluid iconito" src="static\img\iconos\servicios-icon\autobus.png" alt="" style="width: 9em;"></div>
+                <h3 class="text-center up">Servicios</h3>
+                <p class="up"> Nos caracterizamos por prestar un servicio a la medida y así, poder cubrir necesidades diversas. Trabajamos para empresas, particulares, colegios, invitados de fiestas y en estos tiempos, también hemos trabajado para el rubro de la salud.</p>
+            </div>
+
+            <div id="servciosforreal" class="row row-cols-2 row-cols-s-3 row-cols-sm-3 row-cols-md-5 row-cols-lg-5">
+                <div class="col card border-white" style="height: em;">
+                    <img src="static\img\fotos\traslado_de_personal.png" class="card-img-top border-white mt-2" alt="..." >
+                    <div class="card-body">
+                        <p class="card-text">Traslado de personal</p>
+                    </div>
+                </div>
+                <div class="col card border-white" style="height: em;">
+                    <img src="static\img\fotos\transfers.png" class="card-img-top border-white mt-2" alt="..." >
+                    <div class="card-body ">
+                        <p class="card-text up">Transfers</p>
+                    </div>
+                </div>
+                <div class="col card border-white" style="height: em;">
+                    <img src="static\img\fotos\giras_programadas.png" class="card-img-top border-white mt-2" alt="..." >
+                    <div class="card-body">
+                        <p class="card-text up">Giras programadas</p>
+                    </div>
+                </div>
+                <div class="col card border-white" style="height: em;">
+                    <img src="static\img\fotos\tours.png" class="card-img-top border-white mt-2" alt="..." >
+                    <div class="card-body">
+                        <p class="card-text up">Tours</p>
+                    </div>
+                </div>
+                <div class="col card border-white" style="height: em;">
+                    <img src="static\img\fotos\matrimonios.png" class="card-img-top border-white mt-2" alt="..." >
+                    <div class="card-body">
+                        <p class="card-text up">Matrimonios</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            
+        </div>
+        
+    </div>
+    <div id="footer"class="container-fluid text-white bg-primary p-4">
+        <div class="row">
+            <p class="col-3">Fran Lj, 2021</p>
+            <p class="offset-lg-5 offset-sm-3 offset-xs-1 col-3 text-right" id="contacto" >TRANSAA andres.a@transporteandaur.cl +56967791006</p>
+        </div>
+    </div>
+    <p class="text-info m-4">Iconos diseñados por <a href="https://www.flaticon.es/autores/eucalyp" title="Eucalyp">Eucalyp</a> de <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a> y  <a href="" title="Icongeek26">Icongeek26</a>, de <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>. </p>
+</body>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script>
+    $(document).ready(function(){
+        
+        $("#contact").on("click", function (eventi) {
+                eventi.preventDefault();
+                $("#formulariocontacto").removeClass("d-none");
+        });
+
+        $("#formulariocontacto, #formulariocontacto").on("dblclick", function (eventi) {
+                eventi.preventDefault();
+                $("#formulariocontacto").addClass("d-none");
+        });
+
+        
+
+    })
+
+
+
+
+
+
+
+        
+
+    
+</script>
+</html>

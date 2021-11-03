@@ -10,12 +10,23 @@
     <!--Import materialize.css-->
     <title>TransAA</title>
     <style>
+        .iconito {
+            -webkit-transition: transform 1s ease;
+            transition: transform 1s ease;
+        }
         .iconito:hover {
             transform: scale(1.3); 
         }
         #logo {
 
         }
+        .up {
+            -webkit-transition: font-size 1s ease;
+            transition: font-size 1s ease;
+            }
+        .up:hover{
+            font-size: 105%;
+            }
     </style>
 </head>
 <body>
@@ -28,10 +39,10 @@
                         <div class="container-fluid">
                             <div class="collapse navbar-collapse text-bold" id="navbarNav">
                                 <ul class="navbar-nav">
-                                <li class="nav-item"><a id ="Nosotros"class="nav-link active" aria-current="page" href="nosotros.html">Nosotros   |</a></li>
-                                <li class="nav-item"><a  id ="Servicios"class="nav-link" href="servicios.html">  Servicios  |</a></li>
-                                <li class="nav-item"><a id="contact" value ="Contacto" class="nav-link" href="contacto.html">  Contacto  |</a></li>
-                                <li class="nav-item"><a id="contact" value ="index" class="nav-link" href="index.html">  Home </a></li>
+                                <li class="nav-item up"><a id ="Nosotros"class="nav-link active" aria-current="page" href="nosotros.html">Nosotros   |</a></li>
+                                <li class="nav-item up"><a  id ="Servicios"class="nav-link" href="servicios.html">  Servicios  |</a></li>
+                                <li class="nav-item up"><a id="contact" value ="Contacto" class="nav-link" href="contacto.html">  Contacto  |</a></li>
+                                <li class="nav-item up"><a id="contact" value ="index" class="nav-link" href="index.html">  Home </a></li>
                                 </ul>
                             </div>
                         </div>
@@ -66,7 +77,7 @@
         </div>
 
         
-        <div id="parrafouno" class="container bg-gray text-black text-center pd-10 me-30 ms-30" ><h4>No te quedes abajo de TransAA y vive la mejor experiencia en transporte.</h4><!--parrafouno-->
+        <div id="parrafouno" class="container bg-gray text-primary text-center pd-10 me-30 ms-30" ><h4 class="up"> <em> No te quedes abajo de TransAA y vive la mejor experiencia en transporte.</em></h4><!--parrafouno-->
         </div>
 
         <div id="carouselExampleControls" class="carousel slide pb-2" data-bs-ride="carousel">
@@ -96,13 +107,13 @@
             <div id="misionvision" class="row mt-4 row-cols-1 row-cols-sm-2 row-cols-md-2 bg-white text-dark bg-img-block text-center">
                 <div id="mision" class="col">
                     <img class="img-fluid iconito mb-4" src="static\img\iconos\mision\mision.png" alt="" style="width: 6em;">
-                    <h3>Misión</h3>
-                    <p>En TransAA queremos posicionarnos como los mejores transportistas de pasajeros a la medida entre las regiones Quinta y Metropolitana. </p>
+                    <h3 class="up">Misión</h3>
+                    <p class="up">En TransAA queremos posicionarnos como los mejores transportistas de pasajeros a la medida entre las regiones Quinta y Metropolitana. </p>
                 </div>
                 <div id="vision" class="col">
                     <img class="img-fluid iconito mb-4" src="static\img\iconos\mision\vision.png" alt="" style="width: 6em;">
-                    <h3>Visión</h3>
-                    <p>TransAA es una empresa chilena con mas de 10 años en el mercado que apuesta por el transporte a la medida, especialmente en las regiones quinta y metropolitana. Prestamos servicios de manera rápida, segura, cómoda y confiable.</p>
+                    <h3 class="up">Visión</h3>
+                    <p class="up">TransAA es una empresa chilena con mas de 10 años en el mercado que apuesta por el transporte a la medida, especialmente en las regiones quinta y metropolitana. Prestamos servicios de manera rápida, segura, cómoda y confiable.</p>
                 </div>
             </div>
         </div>
@@ -110,7 +121,7 @@
         <div id="servicios" class="container text-center"><!-- servicios-->
             <div id="services_handler" class="row-cols-1 mb-3">
                 <div class="col"><img  class="img-fluid iconito" src="static\img\iconos\servicios-icon\autobus.png" alt="" style="width: 9em;"></div>
-                <h3 class="text-center">Servicios</h3>
+                <h3 class="text-center up">Servicios</h3>
             </div>
 
             <div id="servciosforreal" class="row row-cols-2 row-cols-s-3 row-cols-sm-3 row-cols-md-5 row-cols-lg-5 d-none">
@@ -123,38 +134,38 @@
                 <div class="col card border-white" style="height: em;">
                     <img src="static\img\fotos\transfers.png" class="card-img-top border-white mt-2" alt="..." >
                     <div class="card-body ">
-                        <p class="card-text">Transfers</p>
+                        <p class="card-text up">Transfers</p>
                     </div>
                 </div>
                 <div class="col card border-white" style="height: em;">
                     <img src="static\img\fotos\giras_programadas.png" class="card-img-top border-white mt-2" alt="..." >
                     <div class="card-body">
-                        <p class="card-text">Giras programadas</p>
+                        <p class="card-text up">Giras programadas</p>
                     </div>
                 </div>
                 <div class="col card border-white" style="height: em;">
                     <img src="static\img\fotos\tours.png" class="card-img-top border-white mt-2" alt="..." >
                     <div class="card-body">
-                        <p class="card-text">Tours</p>
+                        <p class="card-text up">Tours</p>
                     </div>
                 </div>
                 <div class="col card border-white" style="height: em;">
                     <img src="static\img\fotos\matrimonios.png" class="card-img-top border-white mt-2" alt="..." >
                     <div class="card-body">
-                        <p class="card-text">Matrimonios</p>
+                        <p class="card-text up">Matrimonios</p>
                     </div>
                 </div>
             </div>
             
             <div id="ekipo"class="container bg-white pt-2 mb-4"><!-- equipo-->
-                <div class="col"><img  class="img-fluid iconito" src="static\img\fotos\trans_aa_vert_png_icono.png" alt="" style="width: 9em;"></div>
-                <h3>Nosotros</h3>
+                <div class="col"><img  class="img-fluid iconito" src="static\img\fotos\trans_aa_vert_png_icono.png" alt="" style="width: 7em;"></div>
+                <h3 class="up">Nosotros</h3>
                 <div id="equipito" class="row-cols-1 text-center text-dark align-bottom">
                     <div id="chinauno" class="col bg-white text-dark bg-img-block text-center d-none">
                         <img class="img-fluid" src="static\img\fotos\andres.png" alt="" style="height: 10em;">
-                        <h4 class="mt-4">Andrés Andaur</h4>
+                        <h4 class="mt-4 up">Andrés Andaur</h4>
                         <h5>CEO</h5>
-                        <p>Andrés es el fundador de TransAA <br> y tambien quien actualmente la dirige. <br> Además, es un gran cantante. </p>
+                        <p class="up">Andrés es el fundador de TransAA <br> y tambien quien actualmente la dirige. <br> Además, es un gran cantante. </p>
                     </div>
                 </div>
                 
@@ -163,18 +174,18 @@
             <div id="pilares" class="row row-cols-1 row-cols-sm-3 row-cols-md-3 bg-white text-dark bg-img-block text-center d-none">
                 <div id="flotita" class="col">
                     <img class="img-fluid" src="static\img\iconos\servicios-icon\public-transport.png" alt="" style="height: 5em;"><br>
-                    <h2>Flota</h2><br>
+                    <h2 class="up">Flota</h2><br>
                     <p>Contamos con más de 10 vehículos a su servicio, totalmente equipados y acondicionados a sus necesidades permitiéndonos entregar un servicio de calidad, seguro, cómodo y en permanente evolución. Actualmente en TransAA estamos acondicionados para trabajar bajos normas sanitarias.</p>
                 </div>
                 <div id="conductoress" class="col">
                     <img class="img-fluid" src="static\img\iconos\servicios-icon\team-leader.png" alt="" style="height: 5em;"><br>
-                    <h2>Conductores</h2><br>
+                    <h2 class="up">Conductores</h2><br>
                     <p>Nuestros conductores están altamente calificados para su labor:  Tienen la confianza en si mismos que regala la experiencia y tambien tienen toda la paciencia para enfrentar con serenidad las dificultades del camino. Además, los TransAA somos muy amables! </p>
                 </div>
                 <div id="compromisoss" class="col">
                     <img class="img-fluid" src="static\img\iconos\servicios-icon\handshake.png" alt="" style="height: 5em;"><br>
-                    <h2>Compromiso</h2><br>
-                    <p>Nuestro compromiso con la calidad y seguridad nos permite tener una baja rotación laboral, gracias a la permanente y estricta evaluación de nuestro personal a bordo, tanto en su salud física como psicológica.</p>
+                    <h2 class="up">Compromiso</h2><br>
+                    <p class="up">Nuestro compromiso con la calidad y seguridad nos permite tener una baja rotación laboral, gracias a la permanente y estricta evaluación de nuestro personal a bordo, tanto en su salud física como psicológica.</p>
                 </div>
             </div>
         </div>

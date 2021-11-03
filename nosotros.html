@@ -10,12 +10,23 @@
     <!--Import materialize.css-->
     <title>TransAA</title>
     <style>
+        .iconito {
+            -webkit-transition: transform 1s ease;
+            transition: transform 1s ease;
+        }
         .iconito:hover {
             transform: scale(1.3); 
         }
         #logo {
 
         }
+        .up {
+            -webkit-transition: font-size 1s ease;
+            transition: font-size 1s ease;
+            }
+        .up:hover{
+            font-size: 105%;
+            }
     </style>
 </head>
 <body>
@@ -28,10 +39,10 @@
                         <div class="container-fluid">
                             <div class="collapse navbar-collapse text-bold" id="navbarNav">
                                 <ul class="navbar-nav">
-                                <li class="nav-item"><a id ="Nosotros"class="nav-link active" aria-current="page" href="nosotros.html">Nosotros   |</a></li>
-                                <li class="nav-item"><a  id ="Servicios"class="nav-link" href="servicios.html">  Servicios  |</a></li>
-                                <li class="nav-item"><a id="contact" value ="Contacto" class="nav-link" href="contacto.html">  Contacto  |</a></li>
-                                <li class="nav-item"><a id="contact" value ="index" class="nav-link" href="index.html">  Home </a></li>
+                                <li class="nav-item up"><a id ="Nosotros"class="nav-link active" aria-current="page" href="nosotros.html">Nosotros   |</a></li>
+                                <li class="nav-item up"><a  id ="Servicios"class="nav-link" href="servicios.html">  Servicios  |</a></li>
+                                <li class="nav-item up"><a id="contact" value ="Contacto" class="nav-link" href="contacto.html">  Contacto  |</a></li>
+                                <li class="nav-item up"><a id="contact" value ="index" class="nav-link" href="index.html">  Home </a></li>
                                 </ul>
                             </div>
                         </div>
@@ -69,13 +80,13 @@
         <div>
             <div id="ekipo"class="container bg-white pt-2 mb-4 text-center"><!-- equipo-->
                 
-                <h2 class="text-brand text-primary mb-4">Nosotros</h2>
+                <h2 class="text-brand text-primary mb-4 up">Nosotros</h2>
                 <div id="equipito" class="row-cols-1 text-center text-dark align-bottom">
                     <div id="chinauno" class="col bg-white text-dark bg-img-block text-center">
                         <img class="img-fluid iconito" src="static\img\fotos\andres.png" alt="" style="height: 9em;">
-                        <h4 class="mt-4">Andrés Andaur</h4>
-                        <h5>CEO</h5>
-                        <p>Andrés es el fundador de TransAA <br> y tambien quien actualmente la dirige. <br> Además, es un gran cantante. </p>
+                        <h4 class="mt-4 up">Andrés Andaur</h4>
+                        <h5 class="up">CEO</h5>
+                        <p class="up">Andrés es el fundador de TransAA <br> y tambien quien actualmente la dirige. <br> Además, es un gran cantante. </p>
                     </div>
                 </div>
                 
@@ -84,18 +95,18 @@
             <div id="pilares" class="row row-cols-1 row-cols-sm-3 row-cols-md-3 bg-white text-dark bg-img-block text-center">
                 <div id="flotita" class="col">
                     <img class="img-fluid iconito" src="static\img\iconos\servicios-icon\public-transport.png" alt="" style="height: 5em;"><br>
-                    <h2>Flota</h2><br>
-                    <p>Contamos con más de 10 vehículos a su servicio, totalmente equipados y acondicionados a sus necesidades permitiéndonos entregar un servicio de calidad, seguro, cómodo y en permanente evolución. Actualmente en TransAA estamos acondicionados para trabajar bajos normas sanitarias.</p>
+                    <h2 class="up">Flota</h2><br>
+                    <p class="up">Contamos con más de 10 vehículos a su servicio, totalmente equipados y acondicionados a sus necesidades permitiéndonos entregar un servicio de calidad, seguro, cómodo y en permanente evolución. Actualmente en TransAA estamos acondicionados para trabajar bajos normas sanitarias.</p>
                 </div>
                 <div id="conductoress" class="col">
                     <img class="img-fluid iconito" src="static\img\iconos\servicios-icon\team-leader.png" alt="" style="height: 5em;"><br>
-                    <h2>Conductores</h2><br>
-                    <p>Nuestros conductores están altamente calificados para su labor:  Tienen la confianza en si mismos que regala la experiencia y tambien tienen toda la paciencia para enfrentar con serenidad las dificultades del camino. Además, los TransAA somos muy amables! </p>
+                    <h2 class="up">Conductores</h2><br>
+                    <p class="up">Nuestros conductores están altamente calificados para su labor:  Tienen la confianza en si mismos que regala la experiencia y tambien tienen toda la paciencia para enfrentar con serenidad las dificultades del camino. Además, los TransAA somos muy amables! </p>
                 </div>
                 <div id="compromisoss" class="col">
                     <img class="img-fluid iconito" src="static\img\iconos\servicios-icon\handshake.png" alt="" style="height: 5em;"><br>
-                    <h2>Compromiso</h2><br>
-                    <p>Nuestro compromiso con la calidad y seguridad nos permite tener una baja rotación laboral, gracias a la permanente y estricta evaluación de nuestro personal a bordo, tanto en su salud física como psicológica.</p>
+                    <h2 class="up">Compromiso</h2><br>
+                    <p class="up">Nuestro compromiso con la calidad y seguridad nos permite tener una baja rotación laboral, gracias a la permanente y estricta evaluación de nuestro personal a bordo, tanto en su salud física como psicológica.</p>
                 </div>
             </div>
         </div>
