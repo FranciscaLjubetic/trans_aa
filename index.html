@@ -7,6 +7,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     
     <!--Import materialize.css-->
     <title>TransAA</title>
@@ -37,16 +39,25 @@
             font-size: medium;
         }
 
+        #fotosdeservicio > .col > figure > img {
+            height: 445px;
+            width: 445px;
+            object-fit: cover;
+        }
         
         
 
 
     </style>
 </head>
-<body style="background: rgb(13, 3, 49);">
-    <nav id="navi" class="navbar navbar-expand-lg navbar-dark " style="background: rgb(20,5,71);background: linear-gradient(90deg, rgba(20,5,71,1) 0%, rgba(9,9,121,1) 51%, rgba(8,169,241,1) 100%);">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="static\img\fotos\new_logo_loco.png" alt="" style="height: 5em;"></a>
+<body style="background: rgb(0, 18, 56);" class="p-0 m-0">
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <nav id="navi" class="navbar navbar-expand-lg navbar-dark" style="background: rgb(20,5,71);background: linear-gradient(90deg, rgba(20,5,71,1) 0%, rgba(9,9,121,1) 51%, rgba(8,169,241,1) 100%);" style="position:-webkit-sticky; position: sticky; top: 10px; z-index: 1030;">
+        <div class="container-fluid  text-warning">
+            <a class="navbar-brand" href="#"><img data-aos="zoom-in" data-aos-easing=»3s» src="static\img\fotos\new_logo_loco.png" alt="" style="height: 3em;"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -83,8 +94,8 @@
     <div id="wrapper" class="container-fluid p-0 m-0 m-xs-0 p-xs-0">
                 
         <div id="parrafouno" class="row bg-gray text-center p-4">
-            <div class="col"><h5 class="up"> <em> No te quedes abajo de TransAA y vive la mejor experiencia en transporte </em>   </h5></div>
-            <div class="col"><a type="button" class="btn btn-warning ms-4 text-bold" href="#formulariocontacto">Reserva tu viaje</a></div>
+            <div class="col p-2" style="overflow: hidden;"><h5 data-aos="slide-left" data-aos-easing=»3s»  data-aos-delay=»500″ class="up"> <em> No te quedes abajo de TransAA y vive la mejor experiencia en transporte</em></h5></div>
+            <div class="col p-2"><a type="button" class="btn btn-warning text-bold" href="#formulariocontacto">Reserva tu viaje</a></div>
             <!--parrafouno-->
             
         </div>
@@ -92,13 +103,37 @@
         <div id="carouselExampleControls" class="carousel slide pb-2 m-0" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="static\img\carrousel\banner_ta22.jpg" class="d-block w-100 img-fluid" alt="...">
+                    <img src="static\img\carrousel\banner_ta22.jpg" class="d-block w-100 img-fluid" alt="..." >
                 </div>
                 <div class="carousel-item">
-                    <img src="static\img\carrousel\carrousel1.jpg" class="d-block w-100 img-fluid" alt="...">
+                    <img src="static\img\carrousel\carrousel1.jpg" class="d-block w-100 img-fluid" alt="..." >
                 </div>
                 <div class="carousel-item">
-                    <img src="static\img\carrousel\carrousel4.jpg" class="d-block w-100 img-fluid" alt="...">
+                    <img src="static\img\fotos\new_carrousel\bus_entero.png" class="d-block w-100 img-fluid" alt="..." >
+                </div>
+                <div class="carousel-item">
+                    <img src="static\img\fotos\new_carrousel\bus_entero2.png" class="d-block w-100 img-fluid" alt="..." >
+                </div>
+                <div class="carousel-item">
+                    <img src="static\img\fotos\new_carrousel\conciertos.png" class="d-block w-100 img-fluid" alt="..." >
+                </div>
+                <div class="carousel-item">
+                    <img src="static\img\fotos\new_carrousel\flota_1.png" class="d-block w-100 img-fluid" alt="..." >
+                </div>
+                <div class="carousel-item">
+                    <img src="static\img\fotos\new_carrousel\flotas_3.png" class="d-block w-100 img-fluid" alt="..." >
+                </div>
+                <div class="carousel-item">
+                    <img src="static\img\fotos\new_carrousel\la_movida_2.png" class="d-block w-100 img-fluid" alt="..." >
+                </div>
+                <div class="carousel-item">
+                    <img src="static\img\fotos\new_carrousel\puerto3.png" class="d-block w-100 img-fluid" alt="..." >
+                </div>
+                <div class="carousel-item">
+                    <img src="static\img\fotos\new_carrousel\valle_nevado.png" class="d-block w-100 img-fluid" alt="..." >
+                </div>
+                <div class="carousel-item">
+                    <img src="static\img\fotos\new_carrousel\valparaiso.png" class="d-block w-100 img-fluid" alt="..." >
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -113,15 +148,15 @@
 
         <!-- mision vision nosotros-->
             
-        <div id="misionvision" class="row mt-4 row-cols-1 row-cols-sm-3 row-cols-md-3 bg-none text-white bg-img-block text-center">
+        <div id="misionvision" data-aos="fade-up" data-aos-easing=»3s» data-aos-delay=»1000″ class="row mt-4 row-cols-1 row-cols-sm-3 row-cols-md-3 bg-none text-white bg-img-block text-center">
             <div id="mision" class="col">
                 <img class="img-fluid iconito mb-2" src="static\img\iconos\mision\mision.png" alt="">
                 <h3 class="up">Misión</h3>
                 <p id="misionclick" class="up" style="display:none;">En TransAA queremos posicionarnos como los mejores transportistas de pasajeros a la medida entre las regiones Quinta y Metropolitana. </p>
             </div>
             <div class="col bg-none"><!-- equipo-->
-                <div id="ekipo"><img  class="img-fluid iconito" src="static\img\fotos\new_logo_loco_amarillo_vacio.png" alt=""></div>
-                <h3 class="up">Nosotros</h3>
+                <div class="ekipo"><img  class="img-fluid iconito" src="static\img\fotos\logovector.svg" alt=""></div>
+                <h3 class="ekipo up">Nosotros</h3>
                 <div id="chinauno" class="bg-none text-white bg-img-block text-center" style="display:none;">
                     <img class="img-fluid" src="static\img\fotos\andres.png" alt="" style="height: 8em;">
                     <h5 class="up">Andrés Andaur</h5>
@@ -138,7 +173,7 @@
 
 
         
-        <div id="pilares" class="row mt-2 mb-4 row-cols-1 row-cols-sm-3 row-cols-md-3 bg-none text-white bg-img-block text-center">
+        <div id="pilares" data-aos="fade-up" data-aos-easing=»3s» class="row mt-2 mb-2 row-cols-1 row-cols-sm-3 row-cols-md-3 bg-none text-white bg-img-block text-center">
             <div id="flotita" class="col">
                 <img class="img-fluid iconito" src="static\img\iconos\servicios-icon\public-transport.png" alt="" ><br>
                 <h3 class="up">Flota</h3><br>
@@ -163,45 +198,45 @@
         
         <div id="servicioss" class="container text-center bg-none"><!-- servicios-->
             <div id="services_handler" class="row-cols-1 mb-3">
-                <div class="col"><img  class="img-fluid iconito" src="static\img\iconos\servicios-icon\autobus.png" alt=""></div>
-                <h3 class="text-center up">Servicios</h3>
-                <p class="up text-white">Nos caracterizamos por prestar un servicio a la medida y cubrir necesidades diversas. Trabajamos para empresas, particulares, colegios, invitados de fiestas y en estos tiempos, también hemos trabajado para el rubro de la salud.</p>
+                <div data-aos="fade" data-aos-easing=»3s» class="col"><img  class="img-fluid iconito" src="static\img\iconos\servicios-icon\autobus.png" alt=""></div>
+                <h3 data-aos="slide-right" data-aos-easing=»3s» data-aos-delay=»50″. class="text-center up" style="overflow: hidden;">Servicios</h3>
+                <p data-aos="fade-up" data-aos-easing=»3s» data-aos-delay=»150″. class="up text-white">Nos caracterizamos por prestar un servicio a la medida y cubrir necesidades diversas. Trabajamos para empresas, particulares, colegios, invitados de fiestas y en estos tiempos, también hemos trabajado para el rubro de la salud.</p>
             </div>
 
-            <div class="row row-cols-1 row-cols-sm-3 row-cols-md-5 row-cols-lg-5">
+            <div id="fotosdeservicio" class="row row-cols-1 row-cols-sm-3 row-cols-md-5 row-cols-lg-5">
                 <div class="col">
-                    <figure class="figure figure-container">
-                        <img src="static\img\carrousel2\traslado de personal.jpeg" class="figure-img img-fluid " alt="A generic square placeholder image with  corners in a figure.">
-                        <figcaption class="figure-caption"> <h5>Traslado de personal</h5>
-                            <p>Movemos trabajadores de manera segura, puntual y confiable.</p></figcaption>
+                    <figure class="figure figure-container" style="overflow: hidden;">
+                        <img src="static\img\fotos\new_carrousel\viaje_empresa.jpg" class="figure-img img-fluid "  alt="A generic square placeholder image with  corners in a figure."  data-aos="slide-down" data-aos-easing=»3s»>
+                        <figcaption data-aos="fade" data-aos-easing=»3s» lass="figure-caption"> <h5>Traslado de personal</h5>
+                            <p data-aos="slide-up" data-aos-easing=»3s»>Movemos trabajadores de manera segura, puntual y confiable.</p></figcaption>
                     </figure>
                 </div>
                 <div class="col">
-                    <figure class="figure figure-container">
-                        <img src="static\img\carrousel2\transfers2.jpg" class="figure-img img-fluid" alt="A generic square placeholder image with  corners in a figure.">
-                        <figcaption class="figure-caption"><h5>Transfers</h5>
-                            <p>Nos pueden contactar para realizar viajes a aeropuertos y puntos importantes.</p></figcaption>
+                    <figure class="figure figure-container" style="overflow: hidden;">
+                        <img data-aos="slide-down" data-aos-easing=»3s»  data-aos-delay="500" src="static\img\fotos\new_carrousel\interiores.jpg" class="figure-img img-fluid"  alt="A generic square placeholder image with  corners in a figure.">
+                        <figcaption data-aos="fade" data-aos-easing=»3s»  data-aos-delay="500" class="figure-caption"><h5>Transfers</h5>
+                            <p data-aos="slide-up" data-aos-easing=»3s»  data-aos-delay="500">Nos pueden contactar para realizar viajes a aeropuertos y puntos importantes.</p></figcaption>
                     </figure>
                 </div>
                 <div class="col">
-                    <figure class="figure figure-container">
-                        <img src="static\img\carrousel2\Giras-de-estudio-16.jpg" class="figure-img img-fluid " alt="A generic square placeholder image with  corners in a figure.">
-                        <figcaption class="figure-caption"><h5>Giras programadas</h5>
-                            <p>Nos encargamos de transportar pasajeros de giras de estudios y viajes a regiones en general. </p></figcaption>
+                    <figure class="figure figure-container" style="overflow: hidden;">
+                        <img  data-aos="slide-down" data-aos-easing=»3s»  data-aos-delay="900" src="static\img\carrousel2\Giras-de-estudio-16.jpg" class="figure-img img-fluid " style  ="overflow: hidden;" alt="A generic square placeholder image with  corners in a figure.">
+                        <figcaption data-aos="fade" data-aos-easing=»3s»  data-aos-delay="900" class="figure-caption"><h5>Giras programadas</h5>
+                            <p data-aos="slide-up" data-aos-easing=»3s»  data-aos-delay="900">Nos encargamos de transportar pasajeros de giras de estudios y viajes a regiones en general. </p></figcaption>
                     </figure>
                 </div>
                 <div class="col">
-                    <figure class="figure figure-container">
-                        <img src="static\img\carrousel2\tours.jpeg" class="figure-img img-fluid " alt="A generic square placeholder image with  corners in a figure.">
-                        <figcaption class="figure-caption"><h5>Tours</h5>
-                            <p>No solo nos encargamos de llevar a los pasajeros a los lugares, sino que tambien proveemos servicios de recorridos. </p></figcaption>
+                    <figure class="figure figure-container" style="overflow: hidden;">
+                        <img data-aos="slide-down" data-aos-easing=»2s»  data-aos-delay="1200" src="static\img\fotos\new_carrousel\termas_del_flaco_dos.jpg" class="figure-img img-fluid " style="overflow: hidden;" alt="A generic square placeholder image with  corners in a figure.">
+                        <figcaption  data-aos="fade" data-aos-easing=»2s»  data-aos-delay="1200" class="figure-caption"><h5>Tours</h5>
+                            <p data-aos="slide-up" data-aos-easing=»2s»  data-aos-delay="1200">No solo nos encargamos de llevar a los pasajeros a los lugares, sino que tambien proveemos servicios de recorridos. </p></figcaption>
                     </figure>
                 </div>
                 <div class="col">
-                    <figure class="figure figure-container">
-                        <img src="static\img\carrousel2\wedding20ride.jpg" class="figure-img img-fluid " alt="A generic square placeholder image with  corners in a figure.">
-                        <figcaption class="figure-caption"> <h5>Matrimonios</h5>
-                            <p>Estamos disponibles a cualquier hora y para variadas cantidades de personas.</p></figcaption>
+                    <figure class="figure figure-container" style="overflow: hidden;">
+                        <img data-aos="slide-down" data-aos-easing=»1s»  data-aos-delay="1500" src="static\img\carrousel2\wedding20ride.jpg" class="figure-img img-fluid "  alt="A generic square placeholder image with  corners in a figure.">
+                        <figcaption   data-aos="fade" data-aos-easing=»1s» data-aos-delay="1500" class="figure-caption"> <h5>Matrimonios</h5>
+                            <p  data-aos="fade" data-aos-easing=»1s» data-aos-delay="1500">Estamos disponibles a cualquier hora y para variadas cantidades de personas.</p></figcaption>
                     </figure>
                 </div>
             </div>
@@ -210,38 +245,43 @@
         
         <div  class="p-4 m-4 text-bold text-white" style="border-radius: 15px; background: rgb(12, 6, 123);">
             <form id="formulariocontacto" action="formulario.php" method ="post" class="form_register" encry>
+                
                 <h2 class="form_title text-center ">Reserva tu viaje</h2>
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-2">
                     <div class="col p-3">
-                        <label for="nombre" class="form_label  mb-2">Tu nombre</label><input type="text" class="validate form-control input-index input-index" required>
+                        <label for="nombre" class="form_label  mb-2">Tu nombre</label><input type="text" name="nombre" class="validate form-control input-index input-index" required>
                         <label for="correo" class="form_label  mb-2 mt-4">Correo</label><input name="correo" type="email" class="validate form-control input-index input-index" required>
                         <label for="telefono" class="form_label  mt-4">Telefono</label><input name="telefono" type="tel" class="validate form-control input-index input-index" required>
                         
                     </div>
                     <div class="col p-3">
                         <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
-                            <div class="col">
-                                <label for="destino" class="form_label ">Destino</label><input name="destino" type="text" class="validate form-control input-index input-index" required>
+                            <div class="col pt-0 mt-0">
+                                <label for="destino" class="form_label mb-2">Destino</label><input name="destino" type="text" class="validate form-control input-index input-index" required>
                             </div>
-                            <div class="col">
-                                <label for="cantidad de pasajeros" class="form_label ">Numero pasajeros</label><input name="cantidad_de_pasajeros" type="number" class="validate form-control input-index input-index" required>
+                            <div class="col pt-0 mt-0">
+                                <label for="cantidad de pasajeros" class="form_label mb-2">Numero pasajeros</label><input name="cantidad_de_pasajeros" type="number" class="validate form-control input-index input-index" required>
                             </div>
                         </div>
                         
                         <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
-                            <div class="col">
-                                <label for="trip_start" class="form_label ">Fecha del viaje</label><input type="date" id="start" name="trip_start" class="validate form-control input-index input-index" required
+                            <div class="col pt-0 mt-0">
+                                <label for="trip_start" class="form_label mb-2 mt-4">Fecha del viaje</label><input type="date" id="start" name="trip_start" class="validate form-control input-index input-index" required
                                 value="2021-12-31"
                                 min="2021-11-11" max="2030-12-31">
                             </div>
-                            <div class="col">
-                                <label for="hour_start" class="form_label ">Hora del viaje</label><input type="time" id="appt" name="appt" class="validate form-control input-index input-index" required>
+                            <div class="col pt-0 mt-0">
+                                <label for="hour_start" class="form_label mb-2 mt-4">Hora del viaje</label><input type="time" id="appt" name="appt" class="validate form-control input-index input-index" required>
                             </div>
                         </div> 
                         <div class="row p-2">
-                            <label for="mensaje" class="form_label  mt-2">Escribenos un mensaje</label> <br> <textarea id="mensaje" name="mensaje" rows="3" class="validate form-control input-index input-index">
+                            <label for="mensaje" class="form_label  mt-3">Escribenos un mensaje</label> <br> <textarea id="mensaje" name="mensaje" rows="1" class="validate form-control input-index input-index">
                             </textarea>
-                        </div>        
+                        </div>
+                        <button id="botonenviar" type="submit" class="text-white btn btn-info mt-3">Enviar</button> 
+                        <div id="alerta" class="alert alert-success" role="alert" data-dismiss="alert" style="display: none;">
+                            Tu mensaje ha sido enviado con éxito.
+                        </div>       
                     </div>
                 </div>
             </form>        
@@ -262,12 +302,27 @@
     <div>
         <p class="text-info m-4" >Iconos diseñados por <a href="https://www.flaticon.es/autores/eucalyp" title="Eucalyp">Eucalyp</a> de <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a> y  <a href="" title="Icongeek26">Icongeek26</a>, de <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>. </p>
     </div>
+<script>
+    toastr.options = {
+    "closeButton": true,
+    "progressBar": true,
+    }
+
+    {% if messages %}
+        {% for message in messages %}
+        toastr.{{message.tags }}("{{ message }}")
+        {% endfor %}
+    {% endif %}
+
+    {% block libreria %}
+    {% endblock %} 
+</script>
 </body>
 <script type="text/javascript" src="js/materialize.min.js"></script>
 <script>
     $(document).ready(function(){
         
-        $( "#ekipo" ).click('click', 
+        $( ".ekipo" ).click('click', 
             function() {
             $( "#chinauno" ).toggle();
             }
@@ -304,16 +359,13 @@
             }
         );
 
-    })
-
-
-
-
-
-
-
+        $('#botonenviar').on('click',function(){
         
 
-    
+        $("#alerta").show();
+    });
+
+    })
+
 </script>
 </html>
