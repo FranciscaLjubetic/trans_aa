@@ -92,6 +92,26 @@
         max-height: 63vh;
         }
     }
+	.contenedors{
+		width: 100%;
+		margin: auto;
+		overflow:hidden;
+	}
+	#slider{
+		width: 230vh;
+		height: 35vh;
+		background-image: url('static/img/carrousel/bannerstripe.jpg');
+		background-size: 100% 100%;
+		animation: slider 30s infinite linear;
+	}
+
+	@keyframes slider{
+		to{
+			background-position: 2000px;
+		}
+	}
+
+    
 
 
 
@@ -104,116 +124,119 @@
     <script>
         AOS.init();
     </script>
-    <nav id="navi" class="navbar navbar-expand-lg navbar-dark" style="background: rgb(20,5,71);background: linear-gradient(90deg, rgba(20,5,71,1) 0%, rgba(9,9,121,1) 51%, rgba(8,169,241,1) 100%);" style="position:-webkit-sticky; position: sticky; top: 10px; z-index: 1030;">
-        <div class="container-fluid  text-warning">
-            <a class="navbar-brand" href="#"><img data-aos="zoom-in" data-aos-easing=»3s» src="static\img\fotos\new_logo_loco.png" alt="" style="height: 3em;"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <div class="col">
-                    <a href="tel:+56967791006"><i class="bi bi-telephone-outbound-fill text-warning"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-telephone-outbound-fill text-warning" viewBox="0 0 24 24">
-                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zM11 .5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V1.707l-4.146 4.147a.5.5 0 0 1-.708-.708L14.293 1H11.5a.5.5 0 0 1-.5-.5z"/>
-                    </svg></i></a> <a href="https://wa.me/56967791006"><i class="bi bi-whatsapp text-warning"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 24 24">
-                        <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
-                    </svg></i></a>
-                </div>
-                <ul class="navbar-nav">
-                    <li class="nav-item up">
-                        <a class="nav-link active " aria-current="page" href="#navi">Home</a>
-                    </li>
-                    <li class="nav-item up">
-                        <a class="nav-link " href="#servicioss">Servicios</a>
-                    </li>
-                    <li class="nav-item up">
-                        <a class="nav-link " href="#ekipo">Nosotros</a>
-                    </li>
-                    <li class="nav-item up">
-                        <a class="nav-link " href="#formulariocontacto">Contacto</a>
-                    </li>
 
-                </ul>
-            </div>
-            
-        </div>
-    </nav>
-    <div id="wrapper" class="container-fluid p-0 m-0 m-xs-0 p-xs-0">
-                
+		
+
+
+
+<div id="wrapper" class="container-fluid p-0 m-0 m-xs-0 p-xs-0" data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+	<nav id="navi" class="navbar navbar-expand-lg navbar-dark sticky-top" style="background: rgb(20,5,71);background: linear-gradient(90deg, rgba(20,5,71,1) 0%, rgba(9,9,121,1) 51%, rgba(8,169,241,1) 100%);" style="position:-webkit-sticky; position: sticky; top: 10px; z-index: 1030;">
+		<div class="container-fluid  text-warning">
+				<a class="navbar-brand" href="#"><img data-aos="zoom-in" data-aos-easing=»3s» src="static\img\fotos\new_logo_loco.png" alt="" style="height: 3em;"></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<div class="col">
+						<a href="tel:+56967791006"><i class="bi bi-telephone-outbound-fill text-warning"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-telephone-outbound-fill text-warning" viewBox="0 0 24 24">
+							<path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zM11 .5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V1.707l-4.146 4.147a.5.5 0 0 1-.708-.708L14.293 1H11.5a.5.5 0 0 1-.5-.5z"/>
+						</svg></i></a> <a href="https://wa.me/56967791006"><i class="bi bi-whatsapp text-warning"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 24 24">
+							<path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+						</svg></i></a>
+					</div>
+					<ul class="navbar-nav navbar-nav-scroll">
+						<li class="nav-item up">
+							<a class="nav-link active " aria-current="page" href="#navi">Home</a>
+						</li>
+						<li class="nav-item up">
+							<a class="nav-link " href="#servicioss">Servicios</a>
+						</li>
+						<li class="nav-item up">
+							<a class="nav-link " href="#ekipo">Nosotros</a>
+						</li>
+						<li class="nav-item up">
+							<a class="nav-link " href="#formulariocontacto">Contacto</a>
+						</li>
+		
+					</ul>
+				</div>
+				
+			</div>
+		</nav>
+		
         <div id="parrafouno" class="row bg-gray text-center p-4">
-            <div class="col p-2" style="overflow: hidden;"><h5 data-aos="slide-left" data-aos-easing=»3s»  data-aos-delay=»500″ class="display-6"> <em> Te lleva, Te espera, Te trae</em></h5></div>
-            <div class="col p-2"><a type="button" class="btn btn-warning text-bold" href="#formulariocontacto">Reserva tu viaje</a></div>
+			<div class="col p-2" style="overflow: hidden;"><h5 data-aos="slide-left" data-aos-easing=»3s»  data-aos-delay=»2500″ class="display-6"> <em> Te lleva, Te espera, Te trae</em></h5></div>
+            <div class="col p-2"><a type="button" class="btn btn-warning text-bold text-white" href="#formulariocontacto">Reserva tu viaje</a></div>
             <!--parrafouno-->
             
         </div>
-        <div class="row mb-4">
-            <img data-aos="slide-right" data-aos-easing=»5s»  data-aos-delay=»1000″ src="static\img\carrousel\banner_ta22.jpg" class="d-block w-100 img-fluid pequena" alt="..." >
-        </div>
         
-        <div data-aos="fade-up" data-aos-easing=»5s»  data-aos-delay=»1500″ id="carouselExampleControls" class="carousel slide pb-2 m-0" data-bs-ride="carousel">
+		<div class="container-fluid m-0 p-0">
+			<div class="contenedors">
+				<div id="slider">
+				</div>
+			</div>
+		</div>
+        <!--<div data-aos="fade-up" data-aos-easing=»5s»  data-aos-delay=»1500″ id="carouselExampleControls" class="carousel slide pb-2 m-0" data-bs-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active">
+				<div class="carousel-item">
+					<div class="row">
+						<img src="static\img\fotos\new_carrousel\foto_empresa.jpg" class="d-block w-100 img-fluid pequena" alt="..." style="height:50vh;" >
+                    </div>
+                </div>
+				<div class="carousel-item active">
+					<div class="row">
+						<img src="static\img\fotos\new_carrousel\bus_entero.jpg" class="d-block w-100 img-fluid pequena" alt="..." style="height:50vh;" >
+					</div>
+				</div>
+                <div class="carousel-item">
                     <div class="row">
-                        <img src="static\img\fotos\new_carrousel\foto_empresa.jpg" class="d-block w-100 img-fluid pequena" alt="..." >
+                        <img src="static\img\fotos\new_carrousel\tours_fuera_de_santiago.jpg" class="d-block w-100 img-fluid pequena" alt="..." style="height:50vh;" >
+                    </div>
+                </div>
+				<div class="carousel-item">
+                    <div class="row">
+                        <img src="static\img\fotos\new_carrousel\bosque.jpg" class="d-block w-100 img-fluid pequena" alt="..." style="height:50vh;" >
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="row">
-                        <img src="static\img\fotos\new_carrousel\interiores.jpg" class="d-block w-100 img-fluid pequena" alt="..." >
+                        <img src="static\img\fotos\new_carrousel\termas_del_flaco_dos.jpg" class="d-block w-100 img-fluid pequena" alt="..." style="height:50vh;" >
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="row">
-                        <img src="static\img\fotos\new_carrousel\tours_fuera_de_santiago.jpg" class="d-block w-100 img-fluid pequena" alt="..." >
+                        <img src="static\img\fotos\new_carrousel\valparaiso.jpg" class="d-block w-100 img-fluid pequena" alt="..." style="height:50vh;" >
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="row">
-                        <img src="static\img\fotos\new_carrousel\interiores2.jpg" class="d-block w-100 img-fluid pequena" alt="..." >
+                        <img src="static\img\fotos\new_carrousel\rockeros.jpg" class="d-block w-100 img-fluid pequena" alt="..." style="height:50vh;" >
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="row">
-                        <img src="static\img\fotos\new_carrousel\termas_del_flaco_dos.jpg" class="d-block w-100 img-fluid pequena" alt="..." >
+                        <img src="static\img\fotos\new_carrousel\valle_nevado.jpg" class="d-block w-100 img-fluid pequena" alt="..." style="height:50vh;" >
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="row">
-                        <img src="static\img\fotos\new_carrousel\valparaiso.jpg" class="d-block w-100 img-fluid pequena" alt="..." >
+                        <img src="static\img\fotos\new_carrousel\conciertos.jpg" class="d-block w-100 img-fluid pequena" alt="..." style="height:50vh;" >
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="row">
-                        <img src="static\img\fotos\new_carrousel\rockeros.jpg" class="d-block w-100 img-fluid pequena" alt="..." >
+                        <img src="static\img\fotos\new_carrousel\la_movida_2.jpg" class="d-block w-100 img-fluid pequena" alt="..." style="height:50vh;" >
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="row">
-                        <img src="static\img\fotos\new_carrousel\valle_nevado.jpg" class="d-block w-100 img-fluid pequena" alt="..." >
+                        <img src="static\img\fotos\new_carrousel\flota_1.jpg" class="d-block w-100 img-fluid pequena" alt="..." style="height:50vh;" >
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="row">
-                        <img src="static\img\fotos\new_carrousel\conciertos.jpg" class="d-block w-100 img-fluid pequena" alt="..." >
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="row">
-                        <img src="static\img\fotos\new_carrousel\la_movida_2.jpg" class="d-block w-100 img-fluid pequena" alt="..." >
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="row">
-                        <img src="static\img\fotos\new_carrousel\flota_1.jpg" class="d-block w-100 img-fluid pequena" alt="..." >
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="row">
-                        <img src="static\img\fotos\new_carrousel\viaje_empresa.jpg" class="d-block w-100 img-fluid pequena" alt="..." >
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="row">
-                        <img src="static\img\fotos\new_carrousel\puerto3.jpg" class="d-block w-100 img-fluid pequena" alt="..." >
+                        <img src="static\img\fotos\new_carrousel\puerto3.jpg" class="d-block w-100 img-fluid pequena" alt="..." style="height:50vh;" >
                     </div>
                 </div>
             </div>
@@ -225,11 +248,56 @@
                 <img src="static\img\iconos\next.png" alt="" style="height: 40%;">
                 <span class="visually-hidden">Next</span>
             </button>
-        </div>
+        </div>-->
 
 
 
         
+		<div id="servicioss" class="container-fluid text-center bg-none mt-4"><!-- servicios-->
+			<div id="services_handler" class="row-cols-1 mb-3">
+				<div data-aos="fade" data-aos-easing=»3s» class="col"><img  class="img-fluid iconito" src="static\img\iconos\servicios-icon\autobus.png" alt=""></div>
+				<h3>Servicios</h3>
+				<p data-aos="fade-up" data-aos-easing=»3s» data-aos-delay=»150″. class="up text-white">Nos caracterizamos por prestar un servicio a la medida y cubrir necesidades diversas. Trabajamos para empresas, particulares, colegios, invitados de fiestas y en estos tiempos, también hemos trabajado para el rubro de la salud.</p>
+			</div>
+
+			<div id="fotosdeservicio" class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-5">
+				<div class="col">
+					<figure class="figure figure-container" style="overflow: hidden;">
+						<img src="static\img\carrousel2\transfers2.jpg" class="figure-img img-fluid "  alt="A generic square placeholder image with  corners in a figure."  data-aos="slide-down" data-aos-easing=»3s»>
+						<figcaption data-aos="fade" data-aos-easing=»3s» lass="figure-caption"> <h5>Traslado de personal</h5>
+							<p data-aos="slide-up" data-aos-easing=»3s»>Movemos trabajadores de manera segura, puntual y confiable.</p></figcaption>
+					</figure>
+				</div>
+				<div class="col">
+					<figure class="figure figure-container" style="overflow: hidden;">
+						<img data-aos="slide-down" data-aos-easing=»3s»  data-aos-delay="500" src="static\img\fotos\new_carrousel\viaje_empresa.jpg" class="figure-img img-fluid"  alt="A generic square placeholder image with  corners in a figure.">
+						<figcaption data-aos="fade" data-aos-easing=»3s»  data-aos-delay="500" class="figure-caption"><h5>Transfers</h5>
+							<p data-aos="slide-up" data-aos-easing=»3s»  data-aos-delay="500">Nos pueden contactar para realizar viajes a aeropuertos y puntos importantes.</p></figcaption>
+					</figure>
+				</div>
+				<div class="col">
+					<figure class="figure figure-container" style="overflow: hidden;">
+						<img  data-aos="slide-down" data-aos-easing=»3s»  data-aos-delay="900" src="static\img\carrousel2\Giras-de-estudio-16.jpg" class="figure-img img-fluid " style  ="overflow: hidden;" alt="A generic square placeholder image with  corners in a figure.">
+						<figcaption data-aos="fade" data-aos-easing=»3s»  data-aos-delay="900" class="figure-caption"><h5>Giras programadas</h5>
+							<p data-aos="slide-up" data-aos-easing=»3s»  data-aos-delay="900">Nos encargamos de transportar pasajeros de giras de estudios y viajes a regiones en general. </p></figcaption>
+					</figure>
+				</div>
+				<div class="col">
+					<figure class="figure figure-container" style="overflow: hidden;">
+						<img data-aos="slide-down" data-aos-easing=»2s»  data-aos-delay="1200" src="static\img\fotos\new_carrousel\termas_del_flaco_dos.jpg" class="figure-img img-fluid " style="overflow: hidden;" alt="A generic square placeholder image with  corners in a figure.">
+						<figcaption  data-aos="fade" data-aos-easing=»2s»  data-aos-delay="1200" class="figure-caption"><h5>Tours</h5>
+							<p data-aos="slide-up" data-aos-easing=»2s»  data-aos-delay="1200">No solo nos encargamos de llevar a los pasajeros a los lugares, sino que tambien proveemos servicios de recorridos. </p></figcaption>
+					</figure>
+				</div>
+				<div class="col">
+					<figure class="figure figure-container" style="overflow: hidden;">
+						<img data-aos="slide-down" data-aos-easing=»1s»  data-aos-delay="1500" src="static\img\carrousel2\wedding20ride.jpg" class="figure-img img-fluid "  alt="A generic square placeholder image with  corners in a figure.">
+						<figcaption   data-aos="fade" data-aos-easing=»1s» data-aos-delay="1500" class="figure-caption"> <h5>Matrimonios</h5>
+							<p  data-aos="fade" data-aos-easing=»3s» data-aos-delay="1500">Estamos disponibles a cualquier hora y para variadas cantidades de personas.</p></figcaption>
+					</figure>
+				</div>
+			</div>
+		</div>
 
         <!-- mision vision nosotros-->
         <div data-aos="fade-up" data-aos-easing=»3s» data-aos-delay=»1000″ class="row bg-none text-white bg-img-block text-center mt-4">
@@ -237,7 +305,7 @@
                 <div  class="ekipo mt-2"><img  class="img-fluid" src="static\img\fotos\logoatrazar.png" alt="" style="height: 6em;"></div>
                 <h3 class="ekipo up">Nosotros</h3>
                 <div id="chinauno" class="bg-none text-white bg-img-block text-center" style="display:none;">
-                    <img class="img-fluid" src="static\img\fotos\andres.png" alt="" style="height: 8em;">
+                    <img class="img-fluid mb-2" src="static\img\fotos\andres.png" alt="" style="height: 8em;">
                     <h5 class="up">Andrés Andaur</h5>
                     <h5>CEO</h5>
                     <p class="up">Andrés es el fundador de TransAA <br> y actual director. </p>
@@ -245,7 +313,7 @@
             </div>
         </div>
         <div id="ekipo" data-aos="fade-up" data-aos-easing=»3s» data-aos-delay=»1000″ class="row p-1 mt-4 row-cols-1 row-cols-sm-2 row-cols-md-2 bg-none text-white bg-img-block text-center">
-            <div id="mision" class="col">
+            <div id="mision" class="col mb-4">
                 <img class="img-fluid iconito mb-2" src="static\img\iconos\mision\mision.png" alt="">
                 <h3 class="up">Misión</h3>
                 <p id="misionclick" class="up" style="display:none;">En TransAA queremos posicionarnos como los mejores transportistas de pasajeros a la medida entre las regiones Quinta y Metropolitana. </p>
@@ -261,17 +329,17 @@
         
         <div id="pilares" data-aos="fade-up" data-aos-easing=»3s» class="row p-1 mt-4 row-cols-1 row-cols-sm-3 row-cols-md-3 bg-none text-white bg-img-block text-center">
             <div id="flotita" class="col">
-                <img class="img-fluid iconito" src="static\img\iconos\servicios-icon\public-transport.png" alt="" ><br>
+                <img class="img-fluid iconito mb-2" src="static\img\iconos\servicios-icon\public-transport.png" alt="" ><br>
                 <h3 class="up">Flota</h3><br>
                 <p id="flotitaclick"class="up" style="display:none;">Contamos con más de 10 vehículos a su servicio, totalmente equipados y acondicionados para sus necesidades, permitiéndonos entregar un servicio de calidad, seguro, cómodo y en permanente evolución. Actualmente en TransAA trabajamos bajos la norma sanitaria.</p>
             </div>
             <div id="conductoress" class="col">
-                <img class="img-fluid iconito" src="static\img\iconos\servicios-icon\team-leader.png" alt="" ><br>
+                <img class="img-fluid iconito mb-2" src="static\img\iconos\servicios-icon\team-leader.png" alt="" ><br>
                 <h3 class="up">Conductores</h3><br>
                 <p id="conductoressclick" class="up" style="display:none;">Nuestros conductores están altamente calificados para su labor. Todos somos muy experimentados, nos sometemos regularmente a evaluaciones físicas y sicológicas, y además los TransAA somos muy amables! </p>
             </div>
             <div id="compromisoss" class="col">
-                <img class="img-fluid iconito" src="static\img\iconos\servicios-icon\handshake.png" alt="" ><br>
+                <img class="img-fluid iconito mb-2" src="static\img\iconos\servicios-icon\handshake.png" alt="" ><br>
                 <h3 class="up">Compromiso</h3><br>
                 <p id="compromisossclick" class="up" style="display:none;">Nuestro compromiso con la calidad y seguridad nos permite fidelizar a nuestros clientes, así como también tener en equipo de trabajo muy estable y afiatado. </p>
             </div>
@@ -282,68 +350,24 @@
 
 
         
-        <div id="servicioss" class="container text-center bg-none"><!-- servicios-->
-            <div id="services_handler" class="row-cols-1 mb-3">
-                <div data-aos="fade" data-aos-easing=»3s» class="col"><img  class="img-fluid iconito" src="static\img\iconos\servicios-icon\autobus.png" alt=""></div>
-                <h3 data-aos="slide-right" data-aos-easing=»3s» data-aos-delay=»50″. class="text-center up" style="overflow: hidden;">Servicios</h3>
-                <p data-aos="fade-up" data-aos-easing=»3s» data-aos-delay=»150″. class="up text-white">Nos caracterizamos por prestar un servicio a la medida y cubrir necesidades diversas. Trabajamos para empresas, particulares, colegios, invitados de fiestas y en estos tiempos, también hemos trabajado para el rubro de la salud.</p>
-            </div>
-
-            <div id="fotosdeservicio" class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-5">
-                <div class="col">
-                    <figure class="figure figure-container" style="overflow: hidden;">
-                        <img src="static\img\fotos\new_carrousel\viaje_empresa.jpg" class="figure-img img-fluid "  alt="A generic square placeholder image with  corners in a figure."  data-aos="slide-down" data-aos-easing=»3s»>
-                        <figcaption data-aos="fade" data-aos-easing=»3s» lass="figure-caption"> <h5>Traslado de personal</h5>
-                            <p data-aos="slide-up" data-aos-easing=»3s»>Movemos trabajadores de manera segura, puntual y confiable.</p></figcaption>
-                    </figure>
-                </div>
-                <div class="col">
-                    <figure class="figure figure-container" style="overflow: hidden;">
-                        <img data-aos="slide-down" data-aos-easing=»3s»  data-aos-delay="500" src="static\img\fotos\new_carrousel\interiores.jpg" class="figure-img img-fluid"  alt="A generic square placeholder image with  corners in a figure.">
-                        <figcaption data-aos="fade" data-aos-easing=»3s»  data-aos-delay="500" class="figure-caption"><h5>Transfers</h5>
-                            <p data-aos="slide-up" data-aos-easing=»3s»  data-aos-delay="500">Nos pueden contactar para realizar viajes a aeropuertos y puntos importantes.</p></figcaption>
-                    </figure>
-                </div>
-                <div class="col">
-                    <figure class="figure figure-container" style="overflow: hidden;">
-                        <img  data-aos="slide-down" data-aos-easing=»3s»  data-aos-delay="900" src="static\img\carrousel2\Giras-de-estudio-16.jpg" class="figure-img img-fluid " style  ="overflow: hidden;" alt="A generic square placeholder image with  corners in a figure.">
-                        <figcaption data-aos="fade" data-aos-easing=»3s»  data-aos-delay="900" class="figure-caption"><h5>Giras programadas</h5>
-                            <p data-aos="slide-up" data-aos-easing=»3s»  data-aos-delay="900">Nos encargamos de transportar pasajeros de giras de estudios y viajes a regiones en general. </p></figcaption>
-                    </figure>
-                </div>
-                <div class="col">
-                    <figure class="figure figure-container" style="overflow: hidden;">
-                        <img data-aos="slide-down" data-aos-easing=»2s»  data-aos-delay="1200" src="static\img\fotos\new_carrousel\termas_del_flaco_dos.jpg" class="figure-img img-fluid " style="overflow: hidden;" alt="A generic square placeholder image with  corners in a figure.">
-                        <figcaption  data-aos="fade" data-aos-easing=»2s»  data-aos-delay="1200" class="figure-caption"><h5>Tours</h5>
-                            <p data-aos="slide-up" data-aos-easing=»2s»  data-aos-delay="1200">No solo nos encargamos de llevar a los pasajeros a los lugares, sino que tambien proveemos servicios de recorridos. </p></figcaption>
-                    </figure>
-                </div>
-                <div class="col">
-                    <figure class="figure figure-container" style="overflow: hidden;">
-                        <img data-aos="slide-down" data-aos-easing=»1s»  data-aos-delay="1500" src="static\img\carrousel2\wedding20ride.jpg" class="figure-img img-fluid "  alt="A generic square placeholder image with  corners in a figure.">
-                        <figcaption   data-aos="fade" data-aos-easing=»1s» data-aos-delay="1500" class="figure-caption"> <h5>Matrimonios</h5>
-                            <p  data-aos="fade" data-aos-easing=»3s» data-aos-delay="1500">Estamos disponibles a cualquier hora y para variadas cantidades de personas.</p></figcaption>
-                    </figure>
-                </div>
-            </div>
-        </div>
 
         
-        <div  class="p-4 m-4 text-bold text-white" style="border-radius: 15px; background: rgb(12, 6, 123);">
-            <form id="formulariocontacto" action="formulario.php" method ="post" class="form_register" encry>
+        <div  class="container-fluid p-4 mb-3 text-bold text-white" style="border-radius: 15px; background: rgb(12, 6, 123);">
+            <form id="formulariocontacto" action="https://formsubmit.co/a.andaur.a@gmail.com" method ="POST" class="form_register">
                 
                 <h2 class="form_title text-center ">Reserva tu viaje</h2>
+				<input type="hidden" name="_subject" value="Nuevo mail desde la pagina!">
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-2">
                     <div class="col p-3">
-                        <label for="nombre" class="form_label  mb-2">Tu nombre</label><input type="text" name="nombre" class="validate form-control input-index input-index" required>
-                        <label for="correo" class="form_label  mb-2 mt-4">Correo</label><input name="correo" type="email" class="validate form-control input-index input-index" required>
-                        <label for="telefono" class="form_label  mt-4">Telefono</label><input name="telefono" type="tel" class="validate form-control input-index input-index" required>
+                        <label for="nombre" class="form_label  mb-2">Tu nombre</label><input placeholder="Nombre y apellido" type="text" name="nombre" class="validate form-control input-index input-index" required>
+                        <label for="correo" class="form_label  mb-2 mt-4">Correo</label><input name="correo" placeholder="xxxxx@xxxx.xx" type="email" class="validate form-control input-index input-index" required>
+                        <label for="telefono" class="form_label  mt-4">Telefono</label><input name="telefono" placeholder="+xx x xxxx xx xx" type="tel" class="validate form-control input-index input-index" required>
                         
                     </div>
                     <div class="col p-3">
                         <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
                             <div class="col pt-0 mt-0">
-                                <label for="destino" class="form_label mb-2">Destino</label><input name="destino" type="text" class="validate form-control input-index input-index" required>
+                                <label for="destino" class="form_label mb-2" >Destino</label><input placeholder="Destino"  name="destino" type="text" class="validate form-control input-index input-index" required>
                             </div>
                             <div class="col pt-0 mt-0">
                                 <label for="cantidad de pasajeros" class="form_label mb-2">Numero pasajeros</label><input name="cantidad_de_pasajeros" type="number" class="validate form-control input-index input-index" required>
@@ -352,22 +376,23 @@
                         
                         <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
                             <div class="col pt-0 mt-0">
-                                <label for="trip_start" class="form_label mb-2 mt-4">Fecha del viaje</label><input type="date" id="start" name="trip_start" class="validate form-control input-index input-index" required
+                                <label for="fecha_del_viaje" class="form_label mb-2 mt-4">Fecha del viaje</label><input type="date" id="start" name="fecha_del_viaje" class="validate form-control input-index input-index" required
                                 value="2021-12-31"
                                 min="2021-11-11" max="2030-12-31">
                             </div>
                             <div class="col pt-0 mt-0">
-                                <label for="hour_start" class="form_label mb-2 mt-4">Hora del viaje</label><input type="time" id="appt" name="appt" class="validate form-control input-index input-index" required>
+                                <label for="hora_del_viaje" class="form_label mb-2 mt-4">Hora del viaje</label><input type="time" id="hora_del_viaje" name="hora_del_viaje" class="validate form-control input-index input-index" required>
                             </div>
                         </div> 
                         <div class="row p-2">
                             <label for="mensaje" class="form_label  mt-3">Escribenos un mensaje</label> <br> <textarea id="mensaje" name="mensaje" rows="1" class="validate form-control input-index input-index">
                             </textarea>
                         </div>
-                        <button id="botonenviar" type="submit" class="text-white btn btn-info mt-3">Enviar</button> 
-                        <div id="alerta" class="alert alert-success" role="alert" data-dismiss="alert" style="display: none;">
-                            Tu mensaje ha sido enviado con éxito.
-                        </div>       
+                        <input id="botonenviar" type="submit" class="text-white btn btn-info mt-3">
+						<input type="hidden" name="_next" value="https://transaa.cl/gracias.html">
+                        <!--<div id="alerta" class="alert alert-success" role="alert" data-dismiss="alert" style="display: none;">
+                            Tu mensaje ha sido enviado con éxito. Gracias por contactarte con nosotros.
+                        </div>-->       
                     </div>
                 </div>
             </form>        
@@ -380,48 +405,51 @@
         </div>
         
     </div>
-    <div class="row bg-warning text-center mb-4">
-        <h5 class="text-center text-primary m-4">Las empresas que confían en nosotros</h5>
-        <div class="col">
-            <img src="static\img\fotos\new_carrousel\tps_web2021.png" alt="" style="height: 1em;">
-        </div>
-        <div class="col">
-            <img src="static\img\fotos\new_carrousel\ultraport.svg" alt="" style="height: 1em;">
-        </div>
-        <div class="col">
-            <img class="align-middle" src="static\img\fotos\new_carrousel\vicuna.png" alt="" style="width: 2em; height: 2em;">
-        </div>
-        <div class="col">
-            <img src="static\img\fotos\new_carrousel\tresmontes.png" alt="" style="height: 1em;">
-        </div>
-        <div class="col">
-            <img src="static\img\fotos\new_carrousel\agrosavia.png" alt="" style="height: 2em;">
-            <p class="text-center text-primary">AGROSAVIA Melipilla</p>
-        </div>
-    </div>
-    <div id="footer"class="container-fluid text-white bg-primary p-4" style="background: rgb(20,5,71);background: linear-gradient(90deg, rgba(20,5,71,1) 0%, rgba(9,9,121,1) 51%, rgba(8,169,241,1) 100%);">
+	<div id="empresasennosotros" class="container-fluid m-0 text-center">
+		<div class="row bg-warning text-center mb-4">
+			<h5 class="text-center text-primary my-4">Las empresas que confían en nosotros</h5>
+			<div class="col mt-4">
+				<img src="static\img\fotos\new_carrousel\tps_web2021.png" alt="" style="height: 1.5em;">
+			</div>
+			<div class="col mt-4">
+				<img src="static\img\fotos\new_carrousel\ultraport.svg" alt="" style="height: 1em;">
+			</div>
+			<div class="col mb-4">
+				<img src="static\img\fotos\new_carrousel\vicuna.png" alt="" style="width: 5em;">
+			</div>
+			<div class="col mt-2">
+				<img src="static\img\fotos\new_carrousel\tresmontes.png" alt="" style="height: 2em;">
+			</div>
+			<div class="col mb-2">
+				<img src="static\img\fotos\new_carrousel\agrosavia.png" alt="" style="height: 2em;">
+				<p class="text-center text-primary">AGROSAVIA Melipilla</p>
+			</div>
+		</div>
+	</div>
+
+    <div id="footer"class="container-fluid text-white bg-primary p-4 m-0" style="background: rgb(20,5,71);background: linear-gradient(90deg, rgba(20,5,71,1) 0%, rgba(9,9,121,1) 51%, rgba(8,169,241,1) 100%);">
         <div class="row">
             <p><span class="text-warning">TRANSAA</span> a.andaur.a@transaa.cl +56967791006. <br>  <span class="text-warning">©</span>  2021 Fran L.</p>
         </div>
     </div>
     <div>
-        <p class="text-info m-4" >Iconos diseñados por <a href="https://www.flaticon.es/autores/eucalyp" title="Eucalyp">Eucalyp</a> de <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a> y  <a href="" title="Icongeek26">Icongeek26</a>, de <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>. </p>
+        <p class="text-info m-4">Iconos diseñados por <a href="https://www.flaticon.es/autores/eucalyp" title="Eucalyp">Eucalyp</a> de <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a> y  <a href="" title="Icongeek26">Icongeek26</a>, de <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>. </p>
     </div>
-<script>
-    toastr.options = {
-    "closeButton": true,
-    "progressBar": true,
-    }
+	<script>
+		toastr.options = {
+		"closeButton": true,
+		"progressBar": true,
+		}
 
-    {% if messages %}
-        {% for message in messages %}
-        toastr.{{message.tags }}("{{ message }}")
-        {% endfor %}
-    {% endif %}
+		{% if messages %}
+			{% for message in messages %}
+			toastr.{{message.tags }}("{{ message }}")
+			{% endfor %}
+		{% endif %}
 
-    {% block libreria %}
-    {% endblock %} 
-</script>
+		{% block libreria %}
+		{% endblock %} 
+	</script>
 </body>
 <script type="text/javascript" src="js/materialize.min.js"></script>
 <script>
