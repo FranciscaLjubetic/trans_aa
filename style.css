@@ -1,0 +1,107 @@
+body{
+    background: linear-gradient(143deg, rgba(0,0,0,1) 0%, rgba(2,22,55,1) 88%, rgba(1,16,40,1) 100%);
+}
+
+.navbar, #footer{
+    background: rgb(20,5,71);
+    background: linear-gradient(90deg, rgba(20,5,71,1) 0%, rgba(9,9,121,1) 51%, rgb(22, 26, 248) 100%);
+}
+
+.iconito {
+    -webkit-transition: transform 1s ease;
+    transition: transform 1s ease;
+    height: 4em !important;
+}
+.iconito:hover {
+    transform: scale(1.3); 
+}
+
+.up {
+    -webkit-transition: font-size 1s ease;
+    transition: font-size 1s ease;
+    }
+.up:hover{ 
+    font-size: 105%;
+    }
+h3, h5, h4, label, h2, label{
+    color: rgb(1, 18, 252);
+}
+
+p{
+    color: white;
+    line-height: 1em;
+    font-size: small;
+}
+
+#fotosdeservicio > .col > figure > img {
+    height: 190px;
+    width: 190px;
+    object-fit: cover;
+}
+
+/*NEW GALLERY*/
+.close {
+font-size: 1.5rem;
+}
+
+.col-4 img {
+opacity: 0.7;
+cursor: pointer;
+margin: 1rem;
+
+}
+
+.col-4 img:hover {
+opacity: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.carousel-item> .row> img{
+    object-fit: cover;
+    overflow-y: hidden;
+    vertical-align: middle;
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px){/*RESPONSIVENESS*/
+img.pequena{
+max-height: 20vh;
+}
+}
+
+@media only screen and (max-width: 900px){/*RESPONSIVENESS*/
+img.pequena{
+max-height: 30vh;
+}
+}
+
+@media only screen and (max-width: 1200px){/*RESPONSIVENESS*/
+img.pequena{
+max-height: 45vh;
+}
+}
+
+@media only screen and (min-width: 1201px ){/*RESPONSIVENESS*/
+img.pequena{
+max-height: 63vh;
+}
+}
+.contenedors{
+width: 100%;
+margin: auto;
+overflow:hidden;
+}
+#slider{
+width: 230vh;
+height: 35vh;
+background-image: url('static/img/carrousel/bannerstripe.jpg');
+background-size: 100% 100%;
+animation: slider 30s infinite linear;
+}
+
+@keyframes slider{
+to{
+    background-position: 2000px;
+}
+}
+
