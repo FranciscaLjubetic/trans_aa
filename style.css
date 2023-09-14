@@ -92,10 +92,10 @@ margin: auto;
 overflow:hidden;
 }
 #slider{
-width: 225vw;
-height: 35vh;
+width: 200vw;
+height: 45vh;
 background-image: url('static/img/carrousel/bannerstripe.jpg');
-background-size: 100% 100%;
+background-repeat: repeat-x;
 animation: slider 30s infinite linear;
 }
 
