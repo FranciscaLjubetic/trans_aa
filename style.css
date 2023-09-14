@@ -92,7 +92,7 @@ margin: auto;
 overflow:hidden;
 }
 #slider{
-width: 230vh;
+width: 230vw;
 height: 35vh;
 background-image: url('static/img/carrousel/bannerstripe.jpg');
 background-size: 100% 100%;
